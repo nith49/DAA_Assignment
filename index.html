@@ -476,13 +476,31 @@
             50% { opacity: 0.7; }
             100% { opacity: 0.2; }
         }
+        /* GitHub icon style */
+        .github-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        
+        .github-link:hover {
+            color: var(--accent-color);
+            transform: scale(1.1);
+            text-shadow: var(--neon-glow);
+        }
     </style>
 </head>
 <body>
     <!-- Stars background -->
     <div class="stars" id="stars"></div>
-    
     <header>
+        <!-- Added GitHub icon with link -->
+        <a href="https://github.com/nith49/DAA_Assignment_Cliques" class="github-link" target="_blank" title="View on GitHub">
+            <i class="fab fa-github"></i>
+        </a>    
         <h1>Maximal Clique Enumeration</h1>
         <p class="subtitle">Algorithm Implementation and Analysis on Real-World Networks</p>
         <div class="authors">
@@ -732,3 +750,7 @@
                     <i class="fas fa-download"></i> Download Full Technical Report (PDF)
                 </a>
             </div>
+            <footer>
+                <p>© 2024 Pavan Sai Pasala and Naga Siva Nithin Kota | BITS Pilani, Hyderabad Campus</p>
+                <p>View the project on <a href="https://github.com/nith49/DAA_Assignment_Cliques" target="_blank" style="color: var(--accent-color);">GitHub <i class="fab fa-github"></i></a></p>
+            </footer>
